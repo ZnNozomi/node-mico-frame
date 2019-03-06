@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "noResolve": false,
+    "outDir": "bin", // TS文件编译后会放入到此文件夹内
+    "baseUrl": ".",
+    "paths": {
+      "@service/*": ["src/service/*"],
+      "@decorator/*": ["src/decorator/*"],
+      "@config/*": ["config/*"],
+      "@model/*": ["src/model/*"],
+      "@route/*": ["src/route/*"],
+      "@utils/*": ["src/utils/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@controller/*": ["src/controller/*"]
+    }
+  },
+  "typeRoots": [
+    "node_modules/@types",
+    "src/@types"
+  ],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
