@@ -34,4 +34,4 @@ const controllerPath = path.resolve(__dirname, './controller')
 const router = new Router(app, controllerPath)
 router.init()
 
-app.listen(1234)
+app.listen(1233)
